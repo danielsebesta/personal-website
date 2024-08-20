@@ -22,7 +22,6 @@
 		<div class="hero-head">
 			<nav class="navbar container" role="navigation" aria-label="main navigation">
 				<div class="navbar-brand">
-					<button id="theme-toggler" class="button" style="margin:15px;"><i class="fas fa-sun"></i></button>
 					<a class="navbar-item" href="https://bulma.io"><strong>Daniel Šebesta</strong></a>
 
 					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -91,38 +90,6 @@
 			</div>
 		</div>
 	</section>
-	<script>
-		const themeToggler = document.getElementById('theme-toggler');
-
-		const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-		const currentTheme = localStorage.getItem('theme') || (prefersDarkMode ? 'dark' : 'light');
-		document.documentElement.setAttribute('data-theme', currentTheme);
-
-		if (currentTheme === 'dark') {
-			themeToggler.innerHTML = '🌞';
-		} else {
-			themeToggler.innerHTML = '🌙';
-		}
-
-		themeToggler.addEventListener('click', () => {
-			const currentTheme = document.documentElement.getAttribute('data-theme');
-			const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-			document.body.style.transition = 'background-color 0.1s ease-in-out';
-			document.documentElement.setAttribute('data-theme', newTheme);
-			localStorage.setItem('theme', newTheme);
-
-			setTimeout(() => {
-				document.documentElement.style.transition = '';
-			}, 500);
-
-			if (newTheme === 'dark') {
-				themeToggler.innerHTML = '🌞';
-			} else {
-				themeToggler.innerHTML = '🌙';
-			}
-		});
-	</script>
 	<script src="./assets/js/bulma.js"></script>
 </body>
 
