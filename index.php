@@ -32,7 +32,7 @@
 <body>
 	<div class="container">
 		<header class="d-flex justify-content-center py-3 fixed-top">
-			<nav id="scrollspy-1-navbar" class="navbar px-3" style="background-color: var(--bs-content-bg); border-bottom: var(--bs-border-width) solid var(--bs-content-border-color);">
+			<nav id="scrollspy-1-navbar" class="navbar px-3" style="background-color: var(--bs-content-bg); border-radius:10000px;">
 				<a class="navbar-brand" href="#">
 					<span class="d-none d-sm-inline"><i class="ph-duotone ph-hand-waving"></i> Daniel Šebesta</span>
 				</a>
@@ -53,8 +53,8 @@
 		<!-- Navbar scrollspy -->
 
 		<main data-bs-spy="scroll" data-bs-target="#scrollspy-1-navbar" data-bs-smooth-scroll="true">
-			<div class="px-4 pt-5 my-5 text-center justify-content-center align-items-center d-flex flex-column vh-100">
-				<h1 id="scrollspy-1-about" class="display-4 fw-bold text-body-emphasis">Daniel Šebesta</h1>
+			<div class="px-4 pt-5 my-5 text-center justify-content-center align-items-center d-flex flex-column vh-100" id="scrollspy-1-about">
+				<h1 class="display-4 fw-bold text-body-emphasis">Daniel Šebesta</h1>
 				<div class="col-lg-6 mx-auto">
 					<h6 class="display-6 mb-4" style="font-weight:500">Developer</h6>
 					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
@@ -64,7 +64,7 @@
 				</div>
 				<div class="overflow-hidden" style="max-height: 30vh;">
 					<div class="container px-5">
-						<img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+						<img src="./assets/img/fotka.jpg" class="img-fluid rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
 					</div>
 				</div>
 			</div>
