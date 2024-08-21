@@ -12,6 +12,19 @@
 		body {
 			font-family: 'ClashGrotesk-Variable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		}
+
+		.ph-duotone {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+			pointer-events: none
+		}
 	</style>
 
 </head>
@@ -21,25 +34,17 @@
 		<header class="d-flex justify-content-center py-3 fixed-top">
 			<nav id="scrollspy-1-navbar" class="navbar px-3" style="background-color: var(--bs-content-bg); border-bottom: var(--bs-border-width) solid var(--bs-content-border-color);">
 				<a class="navbar-brand" href="#">
-					<img src="..." alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
-					<span class="d-none d-sm-inline">Builder</span>
+					<span class="d-none d-sm-inline"><i class="ph-duotone ph-hand-waving"></i> Daniel Šebesta</span>
 				</a>
 				<ul class="nav nav-pills">
 					<li class="nav-item">
-						<a class="nav-link" href="#scrollspy-1-about">About</a>
+						<a class="nav-link" href="#scrollspy-1-about">O mně</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#scrollspy-1-pricing">Plans</a>
+						<a class="nav-link" href="#scrollspy-1-pricing">Portfolio</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
-						<ul class="dropdown-menu dropdown-menu-end">
-							<li>
-								<h6 class="dropdown-header">Our products</h6>
-							</li>
-							<li><a class="dropdown-item" href="#scrollspy-1-page-builder">Page builder</a></li>
-							<li><a class="dropdown-item" href="#scrollspy-1-form-builder">Form builder</a></li>
-						</ul>
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspy-1-pricing">Kontakt</a>
 					</li>
 				</ul>
 			</nav>
@@ -48,13 +53,13 @@
 		<!-- Navbar scrollspy -->
 
 		<main data-bs-spy="scroll" data-bs-target="#scrollspy-1-navbar" data-bs-smooth-scroll="true">
-			<div class="px-4 pt-5 my-5 text-center justify-content-center align-items-center d-flex flex-column vh-100" id="scrollspy-1-about">
-				<h1 class="display-4 fw-bold text-body-emphasis">Daniel Šebesta</h1>
+			<div class="px-4 pt-5 my-5 text-center justify-content-center align-items-center d-flex flex-column vh-100">
+				<h1 id="scrollspy-1-about" class="display-4 fw-bold text-body-emphasis">Daniel Šebesta</h1>
 				<div class="col-lg-6 mx-auto">
 					<h6 class="display-6 mb-4" style="font-weight:500">Developer</h6>
 					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-						<button type="button" class="btn btn-lg px-4 me-sm-3 rounded-pill">Projekty</button>
-						<button type="button" class="btn btn-outline-secondary btn-lg px-4 rounded-pill">Kontakt</button>
+						<button type="button" class="btn btn-secondary btn-lg px-4 me-sm-3 rounded-pill"><i class="ph-duotone ph-folder"></i> Projekty</button>
+						<button type="button" class="btn btn-secondary btn-lg px-4 rounded-pill"><i class="ph-duotone ph-envelope"></i> Kontakt</button>
 					</div>
 				</div>
 				<div class="overflow-hidden" style="max-height: 30vh;">
