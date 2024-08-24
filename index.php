@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./assets/css/halfmoon.min.css">
 	<link rel="stylesheet" href="./assets/css/clash-grotesk.css">
 	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 	<style>
 		body {
 			font-family: 'ClashGrotesk-Variable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -46,6 +47,14 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#scrollspy-1-pricing">Kontakt</a>
 					</li>
+					<div id="doc-search">
+					</div>
+
+
+
+
+
+
 				</ul>
 			</nav>
 
@@ -69,6 +78,8 @@
 				</div>
 			</div>
 	</div>
+	<!--
+
 	<h4 id="scrollspy-1-pricing">
 		Plans
 		<a href="#scrollspy-1-pricing" class="fw-normal text-decoration-none ms-1">#</a>
@@ -102,8 +113,19 @@
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam obcaecati tempora distinctio rem optio praesentium, corporis commodi placeat. Minus beatae ducimus distinctio sunt pariatur similique, consequatur deserunt odit quia quos.</p>
 
 	</div>
+	-->
 	</main>
-
+	<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+	<script type="text/javascript">
+		docsearch({
+			appId: "ITN31HBHZU",
+			apiKey: "9eeb12b6ff5c1106e308a67d8940a76d",
+			indexName: "dsebesta",
+			container: "#doc-search",
+			placeholder: "Hledejte",
+			debug: false
+		});
+	</script>
 	<script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 

@@ -1,7 +1,14 @@
-# personal-website
-my new personal website/portfolio
+# My new personal website/portfolio
 
-You will need:
 
-    Latest PHP
-    Apache2 webserver
+You will need this to run the files:
+- Latest PHP
+- Apache2 or nginx webserver
+
+You can see the new website [here](https://dsebesta.eu/new)
+
+
+
+**Thank you!**
+
+
